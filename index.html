@@ -1,3 +1,19 @@
 <html>
-  <h1>Абибус</h1>
+  <head>
+    <meta charset="UTF-8">
+    <Title>AABBOOBBAA</Title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+
+    <button onclick="hello()">Нажми меня</button>
+
+    <script>
+      const tg = window.Telegram.WebApp;
+      const user = tg.initDataUnsafe.user;
+      function hello() {
+        alert("Твоё имя: " + user.first_name);
+      }
+    </script>
+  </body>
 </html>
